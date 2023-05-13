@@ -1,38 +1,98 @@
-.App {
+.Header {
   text-align: center;
+  color: rgb(49, 48, 48);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.Body {
+  background-color: #ccc;
+  width: 65%;
+  margin: 10px auto;
+  display: "flex";
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #ebe7e7;
+  padding: 30px;
+  border: 1px rgb(234, 228, 228);
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  border-style: solid solid none;
+}
+.Input_text {
+  outline: none;
+  width: 100%;
+  padding: 7px;
+  border: 1px solid rgb(192, 191, 191);
+  margin-bottom: 2%;
+}
+.Icon {
+  justify-content: space-evenly;
+  height: auto;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  background-color: #bfb7c6;
+  padding: 12px 20px;
+  text-decoration: line-through;
+  margin: 1em auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.Icon_right {
+  text-align: right;
+  flex-direction: row;
+}
+.Icon_button {
+  height: auto;
+  width: auto;
+  align-items: left;
+  color: rgb(201, 42, 42);
+  font-size: 15px;
+  margin-right: 5px;
+  cursor: pointer;
+  height: 1;
+  padding: 5;
+}
+.Border {
+  line-break: auto 1;
+  border-radius: 1rem;
+}
+.Text {
+  text-decoration: line-through;
+  text-decoration-line: line-through;
+  text-decoration-style: solid;
+  text-decoration-color: currentcolor;
+  text-decoration-thickness: auto;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 75%;
+  margin: 5rem;
+  margin: 20px auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  margin: 5rem;
+} */
+
+.container {
+  padding: 16px;
+  margin: 16px;
+}
+.Card_warp {
+  display: flex;
+}
+
+.add_button {
+  border: none;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
