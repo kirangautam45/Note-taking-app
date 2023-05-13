@@ -1,14 +1,14 @@
 import React from "react";
 
-const NoteList = (props) => {
+const NoteList = (note) => {
   return (
-    <div class="card">
-      <div class="container">
+    <div className="card">
+      <div className="container">
         <h4>
-          <b>Title : {props.title}</b>
+          <b>Title : {note.title}</b>
         </h4>
-        <p>Body : {props.body}</p>
-        <p>Date : {props.date}</p>
+        <p>Body : {note.body}</p>
+        <p>Date : {note.date}</p>
         <hr />
       </div>
     </div>

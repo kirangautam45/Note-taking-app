@@ -24,9 +24,27 @@ const App = () => {
       date: "2023-05-13",
     },
   ]);
+
+  const [formData, setFormData] = useState({
+    title: "",
+    body: "",
+  });
+
+  const addNote = () => {
+    let addNoteDetails = {
+      title: formData.title,
+      body: formData.body,
+      date: new Date().toDateString(),
+    };
+    setNoteList([addNoteDetails, ...noteList]);
+  };
   return (
     <div>
-      <NoteForm />
+      <NoteForm
+        formData={formData}
+        setFormData={setFormData}
+        handleSubmit={addNote}
+      />
       {noteList.map((note, index) => (
         <NoteList
           key={index}

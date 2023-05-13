@@ -1,24 +1,36 @@
 import React from "react";
 
-const NoteForm = () => {
+const NoteForm = ({ formData, setFormData, handleSubmit }) => {
   return (
-    <div div className="Body">
-      <div className="To_Body">
-        <input
-          className="Input_text"
-          placeholder="Note Title"
-          // value={props.addName}
-          // onChange={(e) => props.setAddName(e.target.value)}
-        />
-        <input
-          className="Input_text"
-          placeholder="Node Body"
-          // value={props.addRollNumber}
-          // onChange={(e) => props.setRollNumber(e.target.value)}
-        />
+    <div className="body">
+      <input
+        className="input_text"
+        placeholder="Note Title"
+        name="title"
+        value={formData.title}
+        onChange={(e) =>
+          setFormData({
+            ...formData,
+            title: e.target.value,
+          })
+        }
+      />
+      <input
+        className="input_text"
+        placeholder="Note Body"
+        name="body"
+        value={formData.body}
+        onChange={(e) =>
+          setFormData({
+            ...formData,
+            body: e.target.value,
+          })
+        }
+      />
 
-        <button className="Icon_button">ADD Details</button>
-      </div>
+      <button className="add_button" onClick={handleSubmit}>
+        ADD Note
+      </button>
     </div>
   );
 };

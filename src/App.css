@@ -1,9 +1,9 @@
-.Header {
+.header {
   text-align: center;
   color: rgb(49, 48, 48);
 }
 
-.Body {
+.body {
   background-color: #ccc;
   width: 65%;
   margin: 10px auto;
@@ -17,14 +17,15 @@
   border-left-style: none;
   border-style: solid solid none;
 }
-.Input_text {
+.input_text {
   outline: none;
   width: 100%;
   padding: 7px;
   border: 1px solid rgb(192, 191, 191);
   margin-bottom: 2%;
+  font-size: medium;
 }
-.Icon {
+.icon {
   justify-content: space-evenly;
   height: auto;
   flex-direction: row;
@@ -39,11 +40,11 @@
   padding: 0 10px;
 }
 
-.Icon_right {
+.icon_right {
   text-align: right;
   flex-direction: row;
 }
-.Icon_button {
+.icon_button {
   height: auto;
   width: auto;
   align-items: left;
@@ -54,11 +55,11 @@
   height: 1;
   padding: 5;
 }
-.Border {
+.border {
   line-break: auto 1;
   border-radius: 1rem;
 }
-.Text {
+.text {
   text-decoration: line-through;
   text-decoration-line: line-through;
   text-decoration-style: solid;
@@ -68,9 +69,10 @@
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  width: 75%;
-  margin: 5rem;
-  margin: 20px auto;
+  width: 70%;
+  margin: 10px auto;
+  display: "flex";
+  justify-content: center;
 }
 
 /* .card:hover {
@@ -92,7 +94,7 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 18px;
+  font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
 }
